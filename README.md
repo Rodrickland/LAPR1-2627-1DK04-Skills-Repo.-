@@ -1,2 +1,3 @@
 # LAPR1-2627-TTT--Skills-Repo.-
-Este é o nosso repositório
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+cd NOME-DO-REPO
