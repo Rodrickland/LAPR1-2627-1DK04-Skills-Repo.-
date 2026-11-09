@@ -26,4 +26,38 @@
           <h1 class="page-title">Protótipo (primeira versão)</h1>
           <p>Simulação do painel do agricultor. Os dados são de exemplo e não são guardados.</p>
         </section>
+         <section class="block">
+          <h2>Sensores de campo</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Humidade do solo</h3>
+              <p id="txt-humidade"></p>
+              <div class="meter" id="bar-humidade"><i></i></div>
+              <div class="acoes">
+                <button class="act" id="btn-regar" type="button">Regar</button>
+                <button class="act" id="btn-sol" type="button">Simular dia seco</button>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Nutrientes (azoto)</h3>
+              <p id="txt-nutrientes"></p>
+              <div class="meter" id="bar-nutrientes"><i></i></div>
+              <div class="acoes">
+                <button class="act" id="btn-adubar" type="button">Adicionar nutrientes</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>Meteorologia local</h2>
+          <label for="sel-tempo">Previsão para hoje:</label>
+          <select id="sel-tempo">
+            <option value="sol">Sol</option>
+            <option value="chuva">Chuva forte</option>
+            <option value="tempestade">Tempestade às 18h</option>
+            <option value="geada">Geada durante a noite</option>
+          </select>
+          <p class="alerta" id="txt-tempo" role="status"></p>
+        </section>
         
