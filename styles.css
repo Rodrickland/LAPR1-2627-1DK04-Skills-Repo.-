@@ -28,7 +28,7 @@ button {
     cursor: pointer;
     height: 100%;                           
     border: none;                             
-    color: white;
+    color: black;
     background-color: #2c4331;                           
     font-size: 1.1rem; 
 }
