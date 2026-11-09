@@ -1,4 +1,4 @@
-// Dados de exemplo (apenas em memória)
+
 let humidade = 42;
 let nutrientes = 25;
 let proximoId = 4;
@@ -131,7 +131,6 @@ el("form-produto").addEventListener("submit", function (evento) {
   renderInventario();
 });
 
-// Estado inicial
 renderSensores();
 renderTempo();
 renderInventario();
