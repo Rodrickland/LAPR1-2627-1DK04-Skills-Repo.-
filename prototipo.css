@@ -10,7 +10,7 @@ button.act {
     margin: 10px 8px 0 0;
     border-radius: 6px;
     background: #2f7d32;
-    color: ;
+    color: #fff;
     font-size: 0.95rem;
 }
 button.act:hover { background: #1f5f2c; }
