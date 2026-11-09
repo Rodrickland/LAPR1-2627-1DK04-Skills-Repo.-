@@ -25,10 +25,10 @@ button {
     height: 50px;
     width: 100%;
     cursor: pointer;
-    height: 100%;                             /* NOVO: botão preenche a barra */
-    border: none;                             /* NOVO */
-    background: transparent;                  /* NOVO */
-    color: #4F7065;                           /* NOVO */
+    height: 100%;                             
+    border: none;                           
+    background: transparent;                  
+    color: #4F7065;                           
     font-size: 1.1rem; 
 }
 
