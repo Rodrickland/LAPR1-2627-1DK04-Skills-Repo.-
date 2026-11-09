@@ -1,0 +1,29 @@
+
+/* Estilos do protótipo. O styles.css global dá aos botões altura e largura 100%,
+   por isso os botões de ação usam a classe .act para não ficarem esticados. */
+.page-title { display: block; text-align: left; }
+
+button.act {
+    height: auto;
+    width: auto;
+    padding: 8px 14px;
+    margin: 10px 8px 0 0;
+    border-radius: 6px;
+    background: #2f7d32;
+    color: ;
+    font-size: 0.95rem;
+}
+button.act:hover { background: #1f5f2c; }
+button.act:disabled { background: #9aa99b; cursor: not-allowed; }
+
+.acoes { display: flex; flex-wrap: wrap; }
+.alerta { padding: 10px 14px; border-radius: 8px; background: #fff; color: #1d2b1f; }
+.alerta.perigo { background: #fff0d6; border-left: 5px solid #c77700; }
+
+select, input { padding: 6px 8px; border: 1px solid #9aa99b; border-radius: 6px; font-size: 1rem; }
+.form-inv { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-bottom: 16px; }
+.form-inv label { display: flex; flex-direction: column; gap: 4px; }
+
+.tabela-wrap { overflow-x: auto; }
+.tabela-wrap .mock-table { width: 100%; margin: 0; background: #fff; color: #1d2b1f; }
+.estado-urgente { color: #b34700; font-weight: 700; }
