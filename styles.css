@@ -45,3 +45,15 @@ h1 {
     color: #659159;
     font-size: 16px;
 }
+.btn-app {
+    display: inline-block;
+    margin: 8px 0 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #1f5f2c;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn-app:hover { background: #2f7d32; }
+.btn-app:focus-visible { outline: 3px solid #1f5f2c; outline-offset: 3px; }
