@@ -1,0 +1,42 @@
+#grad1 {
+    min-height: 1200px;
+    background-color: red;
+    background-image: linear-gradient(
+        to bottom,
+        #DCF0CE 50%,
+        #ffffff 100%
+    );
+}
+#img1 {
+  clip-path: ellipse(50% 35%);
+}
+
+.navigation-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #659159;
+    font-size: 16px;
+}
