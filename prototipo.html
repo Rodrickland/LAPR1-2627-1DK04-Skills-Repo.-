@@ -19,9 +19,7 @@
         <a href="index.html"><button type="button">Página principal</button></a>
         <a href="about.html"><button type="button">Sobre nós</button></a>
         <a href="products.html"><button type="button">Produto</button></a>
-        <h2>Protótipo (primeira versão)</h2>
-<p>Maquete do painel do agricultor, com dados de exemplo.</p>
-<a class="btn-app" href="prototipo.html">Abrir a aplicação</a>
+        <a href="prototipo.html"><button type="button">Aplicação</button></a>
       </div>
 
       <main class="page">
@@ -29,7 +27,8 @@
           <h1 class="page-title">Protótipo (primeira versão)</h1>
           <p>Simulação do painel do agricultor. Os dados são de exemplo e não são guardados.</p>
         </section>
-         <section class="block">
+
+        <section class="block">
           <h2>Sensores de campo</h2>
           <div class="cards">
             <article class="card">
@@ -63,4 +62,55 @@
           </select>
           <p class="alerta" id="txt-tempo" role="status"></p>
         </section>
-        
+
+        <section class="block">
+          <h2>Proteção de culturas</h2>
+          <button class="act" id="btn-animal" type="button">Simular deteção de animal</button>
+          <ul id="lista-animais"></ul>
+          <p id="txt-animais-vazio">Sem deteções registadas.</p>
+        </section>
+
+        <section class="block">
+          <h2>Inventário e distribuição</h2>
+          <form id="form-produto" class="form-inv">
+            <label>Produto <input id="in-produto" type="text" required maxlength="30" /></label>
+            <label>Quantidade (kg) <input id="in-kg" type="number" min="1" required /></label>
+            <label>Validade (dias) <input id="in-dias" type="number" min="0" required /></label>
+            <button class="act" type="submit">Adicionar</button>
+          </form>
+          <div class="tabela-wrap">
+            <table class="mock-table">
+              <thead>
+                <tr><th>Produto</th><th>Quantidade</th><th>Validade</th><th>Estado</th><th></th></tr>
+              </thead>
+              <tbody id="corpo-inventario"></tbody>
+            </table>
+          </div>
+          <p id="txt-resumo"></p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-cols">
+          <div>
+            <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="36" />
+            <p>Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução</p>
+          </div>
+          <div>
+            <h3>Fontes e referências</h3>
+            <ul class="links">
+              <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">ODS 2 – Erradicar a Fome (ONU)</a></li>
+              <li><a href="https://www.agriwebb.com" target="_blank" rel="noopener">AgriWebb</a></li>
+              <li><a href="https://www.farmbrite.com" target="_blank" rel="noopener">Farmbrite</a></li>
+              <li><a href="https://www.toogoodtogo.com" target="_blank" rel="noopener">Too Good To Go</a></li>
+              <li><a href="https://www.wearephenix.com" target="_blank" rel="noopener">Phenix</a></li>
+              <li><a href="https://cropx.com" target="_blank" rel="noopener">CropX</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="prototipo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+
+header { padding: 16px 20px 8px; text-align: center; }
+header h2 { margin: 0; color: #2c4331; }
+.logo-isep { background: #ffffff; border-radius: 6px; }
+header .logo-isep { display: block; margin: 0 auto 8px; }
+
+.page { max-width: 960px; margin: 0 auto; padding: 24px 20px 40px; }
+.block { margin-bottom: 40px; }
+.page-title { display: block; text-align: left; font-size: 2.2rem; line-height: 1.2; margin: 0 0 16px; }
+.block h2 { margin: 0 0 12px; }
+.block p, .list { line-height: 1.65; max-width: 70ch; }
+.list { padding-left: 22px; }
+.list li { margin-bottom: 10px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+.card { background: rgba(255, 255, 255, 0.85); color: #1d2b1f; border-radius: 10px; padding: 16px 18px; }
+.card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.card p { margin: 0; line-height: 1.55; }
+.card a, .site-footer a { color: inherit; text-decoration: underline; }
+.person { text-align: center; }
+.avatar { display: inline-flex; width: 52px; height: 52px; border-radius: 50%; align-items: center; justify-content: center; background: #2f7d32; color: #ffffff; font-weight: 700; margin-bottom: 8px; }
+
+.site-footer { background: rgba(0, 0, 0, 0.12); text-align: left; padding: 24px 20px; margin-top: 24px; }
+.footer-cols { max-width: 960px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; }
+.footer-cols h3 { margin: 0 0 8px; font-size: 1rem; }
+.links { list-style: none; padding: 0; margin: 0; line-height: 1.8; }
+.copy { max-width: 960px; margin: 16px auto 0; text-align: center; }
+
+
+.mockup { background: #ffffff; color: #1d2b1f; border-radius: 10px; overflow: hidden; max-width: 760px; }
+.mock-bar { background: #2f7d32; color: #ffffff; padding: 8px 12px; font-size: 0.9rem; }
+.mock-bar span { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 255, 255, 0.6); margin-right: 5px; }
+.mock-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; padding: 14px; }
+.mock-tile { border: 1px solid #d5e3d6; border-radius: 8px; padding: 10px; }
+.mock-tile small { display: block; color: #4d6150; }
+.mock-tile strong { display: block; margin: 4px 0 8px; }
+.meter { height: 6px; background: #e3ede4; border-radius: 3px; }
+.meter i { display: block; height: 100%; background: #2f7d32; border-radius: 3px; }
+.meter.warn i { background: #c77700; }
+.mock-table { width: calc(100% - 28px); margin: 0 14px 14px; border-collapse: collapse; font-size: 0.9rem; }
+.mock-table th, .mock-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e3ede4; }
+
+@media (max-width: 600px) { .page-title { font-size: 1.7rem; } }

@@ -1,6 +1,5 @@
 
-/* Estilos do protótipo. O styles.css global dá aos botões altura e largura 100%,
-   por isso os botões de ação usam a classe .act para não ficarem esticados. */
+ 
 .page-title { display: block; text-align: left; }
 
 button.act {

@@ -11,44 +11,90 @@
   <body>
     <div id="grad1">
       <header>
-        <img class="logo-isep" src="https://www.isep.ipp.pt/img/logo_20261007.png" alt="Logótipo do ISEP-UTP" height="44" />
+        <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="44" />
         <h2>Nutrimarket</h2>
       </header>
       <div class="navigation-bar">
         <a href="index.html"><button type="button">Página principal</button></a>
         <a href="about.html"><button type="button">Sobre nós</button></a>
         <a href="products.html"><button type="button">Produto</button></a>
-        <h2>Protótipo (primeira versão)</h2>
-<p>Maquete do painel do agricultor, com dados de exemplo.</p>
-<a class="btn-app" href="prototipo.html">Abrir a aplicação</a>
+        <a href="prototipo.html"><button type="button">Aplicação</button></a>
       </div>
 
-      <h1>Produtos</h1>
       <main class="page">
         <section class="block">
-          <h2>Lista de Produtos</h2>
+          <h1 class="page-title">Produtos</h1>
           <p>Mais da terra, sem desperdício. Sensores, automação e logística inteligente para cultivar com cuidado e levar os alimentos às prateleiras a tempo.</p>
-          <ul>
+        </section>
+
+        <section class="block">
+          <h2>Lista de Produtos</h2>
+          <ul class="list">
             <li><strong>Monitorização das plantas:</strong> sensores de humidade e nutrientes detetam carências e necessidades hídricas a tempo, reduzindo o desperdício de hortícolas.</li>
             <li><strong>Gestão de inventários:</strong> comunicação direta entre agricultores e distribuidores, com envios mais rápidos e alimentos com maior validade.</li>
             <li><strong>Rastreio de animais e proteção de culturas:</strong> evita perdas severas causadas por intrusões de animais.</li>
             <li><strong>Previsão meteorológica local:</strong> antecipa tempestades e eventos extremos, para ativar a prevenção a tempo.</li>
           </ul>
         </section>
-    <footer class="site-footer">
+
+        <section class="block">
+          <h2>Objetivos do produto</h2>
+          <ul class="list">
+            <li>Otimizar o uso de água e nutrientes com sensores de campo de baixo custo.</li>
+            <li>Prevenir perdas por meteorologia adversa, pragas e animais.</li>
+            <li>Escoar produtos rapidamente, ligando agricultores a distribuidores antes de os alimentos se estragarem.</li>
+          </ul>
+        </section>
+
+        <section class="block">
+          <h2>Para quem é</h2>
+          <p>Pequenos agricultores, serviços de distribuição e, indiretamente, populações vulneráveis que beneficiam de alimentos mais acessíveis.</p>
+        </section>
+
+        <section class="block">
+          <h2>Protótipo (primeira versão)</h2>
+          <p>Maquete do painel do agricultor, com dados de exemplo.</p>
+          <a class="btn-app" href="prototipo.html">Abrir a aplicação</a>
+          <div class="mockup" role="img" aria-label="Maquete do painel do Nutrimarket">
+            <div class="mock-bar"><span></span><span></span><span></span> Painel · Horta Norte</div>
+            <div class="mock-grid">
+              <div class="mock-tile"><small>Humidade do solo</small><strong>42%</strong><div class="meter"><i style="width:42%"></i></div></div>
+              <div class="mock-tile"><small>Nutrientes (N-P-K)</small><strong>Baixo N</strong><div class="meter"><i style="width:25%"></i></div></div>
+              <div class="mock-tile"><small>Previsão</small><strong>Tempestade às 18h</strong><div class="meter warn"><i style="width:80%"></i></div></div>
+              <div class="mock-tile"><small>Alerta de intrusão</small><strong>Sem animais</strong><div class="meter"><i style="width:5%"></i></div></div>
+            </div>
+            <table class="mock-table">
+              <tr><th>Produto</th><th>Quantidade</th><th>Validade</th><th>Estado</th></tr>
+              <tr><td>Tomate</td><td>120 kg</td><td>3 dias</td><td>Disponível</td></tr>
+              <tr><td>Alface</td><td>60 kg</td><td>1 dia</td><td>Escoar já</td></tr>
+              <tr><td>Cenoura</td><td>200 kg</td><td>10 dias</td><td>Reservado</td></tr>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
         <div class="footer-cols">
           <div>
-            <img class="logo-isep" src="https://www.isep.ipp.pt/img/logo_20261007.png" alt="Logótipo do ISEP-UTP" height="36" />
+            <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="36" />
             <p>Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução</p>
           </div>
           <div>
             <h3>Fontes e referências</h3>
             <ul class="links">
               <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">ODS 2 – Erradicar a Fome (ONU)</a></li>
+              <li><a href="https://www.agriwebb.com" target="_blank" rel="noopener">AgriWebb</a></li>
+              <li><a href="https://www.farmbrite.com" target="_blank" rel="noopener">Farmbrite</a></li>
+              <li><a href="https://www.toogoodtogo.com" target="_blank" rel="noopener">Too Good To Go</a></li>
+              <li><a href="https://www.wearephenix.com" target="_blank" rel="noopener">Phenix</a></li>
+              <li><a href="https://cropx.com" target="_blank" rel="noopener">CropX</a></li>
             </ul>
           </div>
         </div>
-        <p class="copy"> 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+        <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
       </footer>
+    </div>
+  </body>
+</html>
 
     
