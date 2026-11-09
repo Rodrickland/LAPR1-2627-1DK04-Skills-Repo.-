@@ -26,6 +26,11 @@ button {
     height: 50px;
     width: 100%;
     cursor: pointer;
+    height: 100%;                             /* NOVO: botão preenche a barra */
+    border: none;                             /* NOVO */
+    background: transparent;                  /* NOVO */
+    color: #4F7065;                           /* NOVO */
+    font-size: 1.1rem; 
 }
 
 h1 {
