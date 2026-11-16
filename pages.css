@@ -1,10 +1,10 @@
-/* Estilos da Página Principal (Hero Section) */
+
 .hero-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 48px;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 0 80px 0;
 }
 
 .hero-content {
@@ -13,11 +13,32 @@
   align-items: flex-start;
 }
 
+.badge {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border: 1px solid #c8e6c9;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
 .hero-subtitle {
   font-size: 1.15rem;
   color: var(--text-muted);
-  margin-bottom: 28px;
-  line-height: 1.7;
+  margin-bottom: 32px;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -37,13 +58,19 @@
   box-shadow: var(--shadow-md);
   object-fit: cover;
   border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
 }
 
-/* Botões de Ação na Home */
+.hero-image:hover {
+  transform: scale(1.01);
+}
+
 .btn-app {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -53,6 +80,7 @@
 .primary-btn {
   background-color: var(--primary);
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
 }
 
 .primary-btn:hover {
@@ -61,21 +89,56 @@
 }
 
 .secondary-btn {
-  background-color: var(--accent);
+  background-color: var(--bg-card);
   color: var(--primary);
   border: 1px solid var(--border-color);
 }
 
 .secondary-btn:hover {
-  background-color: #d8ebd9;
+  background-color: var(--accent);
   transform: translateY(-2px);
 }
 
-/* Responsividade para telemóveis */
+
+.features-overview {
+  padding: 40px 0 60px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-header-center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.section-header-center h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.section-header-center p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.feature-card {
+  text-align: left;
+  background: var(--bg-card);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
 @media (max-width: 768px) {
   .hero-section {
     grid-template-columns: 1fr;
     gap: 32px;
     padding: 30px 0;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
   }
 }
