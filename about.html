@@ -4,82 +4,213 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrimarket - Sobre nós</title>
+    <!-- Fonte moderna do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="pages.css" />
   </head>
 
   <body>
-    <div id="grad1">
-      <header>
-        <img class="isep_logo" src="i3_logo_isep_2023.png" alt="Logótipo do Nutrimarket" height="44" />
-        <h2>Nutrimarket</h2>
+    <div class="app-wrapper">
+      <!-- Cabeçalho e Navegação unificados -->
+      <header class="site-header">
+        <div class="header-container">
+          <div class="brand">
+            <img
+              class="isep_logo"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP"
+              height="40"
+            />
+            <span class="brand-name">Nutrimarket</span>
+          </div>
+
+          <nav class="navigation-bar" aria-label="Navegação principal">
+            <a href="index.html" class="nav-link">Página principal</a>
+            <a href="about.html" class="nav-link active">Sobre nós</a>
+            <a href="products.html" class="nav-link">Produto</a>
+            <a href="prototipo.html" class="nav-link btn-highlight">Aplicação</a>
+          </nav>
+        </div>
       </header>
-      <div class="navigation-bar">
-        <a href="index.html"><button type="button">Página principal</button></a>
-        <a href="about.html"><button type="button">Sobre nós</button></a>
-        <a href="products.html"><button type="button">Produto</button></a>
-        <a href="prototipo.html"><button type="button">Aplicação</button></a>
-      </div>
 
-      <main class="page">
-        <section class="block">
+      <!-- Secção de Destaque (Hero) -->
+      <section class="hero-banner">
+        <div class="container">
+          <span class="badge">Projeto Académico · ISEP</span>
           <h1 class="page-title">Sobre o projeto</h1>
-          <p>O Nutrimarket é uma solução tecnológica de apoio à <strong>agricultura de pequena escala</strong> e à <strong>redução do desperdício alimentar</strong>, desenvolvida no âmbito da unidade curricular de Licenciatura em Engenharia Informática.</p>
-        </section>
+          <p class="hero-subtitle">
+            O Nutrimarket é uma solução tecnológica de apoio à
+            <strong>agricultura de pequena escala</strong> e à
+            <strong>redução do desperdício alimentar</strong>, desenvolvida no
+            âmbito da Licenciatura em Engenharia Informática.
+          </p>
+        </div>
+      </section>
 
-        <section class="block">
-          <h2>Objetivo e contexto do projeto</h2>
-          <p>O projeto responde ao <strong>ODS 2 – Erradicar a Fome</strong>. Fome, má nutrição, consumo excessivo de recursos e degradação do solo afetam sobretudo agricultores de pequena escala e populações vulneráveis de países em desenvolvimento, que têm dificuldade em aceder a comida a preços acessíveis e em competir com a agricultura industrial.</p>
-          <p>É um problema atual e que tende a agravar-se sem medidas de gestão sustentável. O direito à alimentação é um direito humano universal, pelo que é essencial criar soluções que otimizem os recursos alimentares e reduzam o desperdício.</p>
-        </section>
+      <!-- Conteúdo Principal -->
+      <main class="container main-content">
+        <!-- Grelha de Contexto e Objetivos -->
+        <div class="grid-2-cols">
+          <section class="card-section">
+            <h2>🌱 Objetivo e contexto</h2>
+            <p>
+              O projeto responde ao <strong>ODS 2 – Erradicar a Fome</strong>.
+              Fome, má nutrição, consumo excessivo de recursos e degradação do
+              solo afetam sobretudo agricultores de pequena escala e populações
+              vulneráveis, que têm dificuldade em competir com a agricultura
+              industrial.
+            </p>
+            <p>
+              O direito à alimentação é um direito humano universal, tornando
+              essencial a criação de soluções que otimizem recursos e reduzam o
+              desperdício.
+            </p>
+          </section>
 
-        <section class="block">
-          <h2>Objetivos do produto</h2>
-          <p><strong>Objetivo geral:</strong> desenvolver uma ferramenta inteligente de monitorização e gestão agrícola em tempo real que apoie pequenos agricultores, otimize a produção, proteja as culturas e combata a fome através da redução do desperdício.</p>
-          <ul class="list">
-            <li>Maximizar a eficiência no uso de água e nutrientes através de sensores de campo.</li>
-            <li>Prevenir perdas de colheitas causadas por condições meteorológicas adversas, pragas ou animais.</li>
-            <li>Criar um sistema de inventário e escoamento rápido que ligue agricultores e distribuidores antes de os alimentos ficarem impróprios para consumo.</li>
-          </ul>
-        </section>
+          <section class="card-section highlight-border">
+            <h2>🎯 Objetivos do produto</h2>
+            <p>
+              <strong>Objetivo geral:</strong> desenvolver uma ferramenta
+              inteligente de monitorização agrícola em tempo real que apoie
+              pequenos agricultores e combata a fome.
+            </p>
+            <ul class="styled-list">
+              <li>
+                Maximizar a eficiência no uso de água e nutrientes através de
+                sensores de campo.
+              </li>
+              <li>
+                Prevenir perdas de colheitas causadas por condições
+                meteorológicas adversas, pragas ou animais.
+              </li>
+              <li>
+                Criar um sistema de inventário rápido que ligue agricultores e
+                distribuidores antes que os alimentos se estraguem.
+              </li>
+            </ul>
+          </section>
+        </div>
 
+        <!-- Público-Alvo -->
         <section class="block">
-          <h2>A quem se destina</h2>
-          <div class="cards">
-            <article class="card"><h3>Pequenos agricultores</h3><p>Monitorizam culturas, protegem a produção e registam o inventário disponível.</p></article>
-            <article class="card"><h3>Distribuidores</h3><p>Recebem excedentes a tempo e encurtam os prazos até ao consumidor.</p></article>
-            <article class="card"><h3>Populações vulneráveis</h3><p>Ganham acesso a alimentos a preços acessíveis, com menos desperdício pelo caminho.</p></article>
+          <h2 class="section-heading">A quem se destina</h2>
+          <div class="cards-grid cols-3">
+            <article class="card">
+              <div class="card-icon">🚜</div>
+              <h3>Pequenos agricultores</h3>
+              <p>
+                Monitorizam culturas, protegem a produção e registam o
+                inventário disponível em tempo real.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🚚</div>
+              <h3>Distribuidores</h3>
+              <p>
+                Recebem excedentes a tempo e encurtam os prazos logísticos até
+                ao consumidor final.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🤝</div>
+              <h3>Populações vulneráveis</h3>
+              <p>
+                Ganham acesso a alimentos frescos a preços acessíveis, com menos
+                desperdício pelo caminho.
+              </p>
+            </article>
           </div>
         </section>
 
+        <!-- Diferenciação -->
         <section class="block">
-          <h2>O que nos distingue</h2>
-          <p>A maioria das ferramentas foca-se na vertente comercial e industrial, a preços proibitivos. O Nutrimarket une agricultura de precisão de baixo custo à gestão logística social de excedentes: atua na origem do problema (cultivo ineficiente e perdas no campo) e no destino (escassez alimentar).</p>
-          <div class="cards">
-            <article class="card"><h3>Gestão agrícola</h3><p><a href="https://www.agriwebb.com" target="_blank" rel="noopener">AgriWebb</a> e <a href="https://www.farmbrite.com" target="_blank" rel="noopener">Farmbrite</a> focam-se na escala comercial, com pouca ligação à distribuição social de excedentes.</p></article>
-            <article class="card"><h3>Combate ao desperdício</h3><p><a href="https://www.toogoodtogo.com" target="_blank" rel="noopener">Too Good To Go</a> e <a href="https://www.wearephenix.com" target="_blank" rel="noopener">Phenix</a> atuam no retalho e no consumidor, não na produção.</p></article>
-            <article class="card"><h3>Sensores IoT</h3><p><a href="https://cropx.com" target="_blank" rel="noopener">CropX</a> otimiza rega e nutrientes, mas com custos elevados para pequenos agricultores.</p></article>
+          <h2 class="section-heading">O que nos distingue</h2>
+          <p class="section-intro">
+            A maioria das ferramentas foca-se na vertente industrial a preços
+            proibitivos. O Nutrimarket une agricultura de precisão de baixo
+            custo à gestão logística social de excedentes, atuando na origem e
+            no destino.
+          </p>
+          <div class="cards-grid cols-3">
+            <article class="card">
+              <h3>Gestão agrícola</h3>
+              <p>
+                <a href="https://www.agriwebb.com" target="_blank" rel="noopener">AgriWebb</a>
+                e
+                <a href="https://www.farmbrite.com" target="_blank" rel="noopener">Farmbrite</a>
+                focam-se na escala comercial, com pouca ligação à distribuição
+                social de excedentes.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Combate ao desperdício</h3>
+              <p>
+                <a href="https://www.toogoodtogo.com" target="_blank" rel="noopener">Too Good To Go</a>
+                e
+                <a href="https://www.wearephenix.com" target="_blank" rel="noopener">Phenix</a>
+                atuam no retalho e no consumidor, não na fase de produção.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Sensores IoT</h3>
+              <p>
+                <a href="https://cropx.com" target="_blank" rel="noopener">CropX</a>
+                otimiza rega e nutrientes, mas apresenta custos elevados para
+                pequenos produtores.
+              </p>
+            </article>
           </div>
         </section>
 
+        <!-- Equipa -->
         <section class="block">
-          <h2>Equipa BEST4TEAMUP</h2>
-          <div class="cards">
-            <article class="card person"><span class="avatar">RT</span><h3>Rodrigo Terra</h3><p>1261441</p></article>
-            <article class="card person"><span class="avatar">SM</span><h3>Salvador Mendonça</h3><p>1260865</p></article>
-            <article class="card person"><span class="avatar">NM</span><h3>Nuno Mesquita</h3><p>1261529</p></article>
-            <article class="card person"><span class="avatar">DB</span><h3>Daniel Borges</h3><p>1261094</p></article>
+          <h2 class="section-heading">Equipa BEST4TEAMUP</h2>
+          <div class="cards-grid cols-4">
+            <article class="card person">
+              <div class="avatar">RT</div>
+              <h3>Rodrigo Terra</h3>
+              <span class="student-id">1261441</span>
+            </article>
+            <article class="card person">
+              <div class="avatar">SM</div>
+              <h3>Salvador Mendonça</h3>
+              <span class="student-id">1260865</span>
+            </article>
+            <article class="card person">
+              <div class="avatar">NM</div>
+              <h3>Nuno Mesquita</h3>
+              <span class="student-id">1261529</span>
+            </article>
+            <article class="card person">
+              <div class="avatar">DB</div>
+              <h3>Daniel Borges</h3>
+              <span class="student-id">1261094</span>
+            </article>
           </div>
         </section>
       </main>
 
+      <!-- Rodapé -->
       <footer class="site-footer">
-        <div class="footer-cols">
-          <div>
-            <img class="logo-isep" src="i3_logo_isep_2023.png" alt="Logótipo do ISEP-UTP" height="36" />
-            <p>Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução</p>
+        <div class="container footer-cols">
+          <div class="footer-info">
+            <img
+              class="logo-isep"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP-UTP"
+              height="36"
+            />
+            <p>
+              <strong>Licenciatura em Engenharia Informática</strong><br />
+              Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução
+            </p>
           </div>
-          <div>
+          <div class="footer-links">
             <h3>Fontes e referências</h3>
             <ul class="links">
               <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">ODS 2 – Erradicar a Fome (ONU)</a></li>
@@ -91,7 +222,12 @@
             </ul>
           </div>
         </div>
-        <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+        <div class="footer-bottom">
+          <p class="copy">
+            &copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno
+            Mesquita e Daniel Borges. Todos os direitos reservados.
+          </p>
+        </div>
       </footer>
     </div>
   </body>
