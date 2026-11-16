@@ -3,49 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutrimarket</title>
+    <title>Nutrimarket - Página Principal</title>
+    <!-- Fonte moderna do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="pages.css" />
   </head>
 
   <body>
     <div id="grad1">
-      <header>
-        <img class="logo-isep" src="i3_logo_isep_2023.png" alt="Logótipo do ISEP-UTP" height="44" />
-        <h2>Nutrimarket</h2>
-      </header>
-      <div class="navigation-bar">
-        <a href="index.html"><button type="button">Página principal</button></a>
-        <a href="about.html"><button type="button">Sobre nós</button></a>
-        <a href="products.html"><button type="button">Produto</button></a>
-        <a href="prototipo.html"><button type="button">Aplicação</button></a>
-      </div>
+      <header class="site-header">
+        <div class="header-container">
+          <div class="brand">
+            <img
+              class="logo-isep"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP-UTP"
+              height="40"
+            />
+            <span class="brand-name">Nutrimarket</span>
+          </div>
 
-      <img
-        id="img1"
-        src="https://www.rivieraproduce.com/wp-content/uploads/2021/12/BIFULCO-FARM-1-768x327.jpg"
-        alt="Campo agrícola"
-        width="300"
-        height="300"
-      />
-      <h1>
-        Mais da terra, sem<br />
-        desperdício.
-      </h1>
-      <p class="p1">
-        Sensores, automação e logística inteligente para<br />
-        cultivar com cuidado e levar os alimentos às<br />
-        prateleiras a tempo.
-      </p>
-      <p><a class="btn-app" href="prototipo.html">Abrir a aplicação</a></p>
+          <nav class="navigation-bar" aria-label="Navegação principal">
+            <a href="index.html" class="nav-link active">Página principal</a>
+            <a href="about.html" class="nav-link">Sobre nós</a>
+            <a href="products.html" class="nav-link">Produto</a>
+            <a href="prototipo.html" class="nav-link btn-highlight">Aplicação</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Secção Principal (Hero com imagem e texto lado a lado em desktop) -->
+      <main class="container main-content">
+        <section class="hero-section">
+          <div class="hero-content">
+            <span class="badge">Agricultura Inteligente &amp; Sustentabilidade</span>
+            <h1 class="page-title">
+              Mais da terra, sem<br />
+              desperdício.
+            </h1>
+            <p class="hero-subtitle">
+              Sensores, automação e logística inteligente para cultivar com cuidado e levar os alimentos às prateleiras a tempo.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-app primary-btn" href="prototipo.html">Abrir a aplicação</a>
+              <a class="btn-app secondary-btn" href="about.html">Saber mais sobre o projeto</a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img
+              id="img1"
+              class="hero-image"
+              src="https://www.rivieraproduce.com/wp-content/uploads/2021/12/BIFULCO-FARM-1-768x327.jpg"
+              alt="Campo agrícola"
+            />
+          </div>
+        </section>
+      </main>
 
       <footer class="site-footer">
-        <div class="footer-cols">
-          <div>
-            <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="36" />
-            <p>Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução</p>
+        <div class="container footer-cols">
+          <div class="footer-info">
+            <img
+              class="logo-isep"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP-UTP"
+              height="36"
+            />
+            <p>
+              Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução
+            </p>
           </div>
-          <div>
+          <div class="footer-links">
             <h3>Fontes e referências</h3>
             <ul class="links">
               <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">ODS 2 – Erradicar a Fome (ONU)</a></li>
@@ -57,7 +91,9 @@
             </ul>
           </div>
         </div>
-        <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+        <div class="footer-bottom">
+          <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+        </div>
       </footer>
     </div>
   </body>
