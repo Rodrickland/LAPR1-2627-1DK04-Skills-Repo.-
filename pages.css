@@ -1,8 +1,342 @@
-/* Estilos da Página de Produtos */
+/* =========================================
+   1. HERO BANNER (Sobre nós / Produtos / Protótipo)
+   ========================================= */
+.hero-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #ffffff;
+  padding: 56px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-banner .badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.4px;
+}
+
+.hero-banner .page-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  letter-spacing: -0.6px;
+}
+
+.hero-banner .hero-subtitle {
+  font-size: 1.12rem;
+  max-width: 750px;
+  color: #e8f5e9;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* =========================================
+   2. HERO SECTION (Página Principal / index.html)
+   ========================================= */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+  padding: 56px 0 72px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-section .badge {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--primary);
+  border: 1px solid #c8e6c9;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero-section .page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.hero-section .hero-subtitle {
+  font-size: 1.12rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-image-container {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* Botões de Ação */
+.btn-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background-color: var(--bg-card);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+}
+
+.secondary-btn:hover {
+  background-color: var(--accent);
+  border-color: #c8e6c9;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   3. SECÇÕES, GRELHAS E CARTÕES
+   ========================================= */
+.features-overview {
+  padding: 40px 0 56px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-header-center {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 36px auto;
+}
+
+.section-header-center h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.section-header-center p {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+}
+
+.block {
+  margin-bottom: 48px;
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  color: var(--text-main);
+  margin-bottom: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.section-intro {
+  color: var(--text-muted);
+  max-width: 820px;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.card-section {
+  background: var(--bg-card);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+  color: var(--primary);
+}
+
+.card-section p {
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.card-section p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-border {
+  border-top: 4px solid var(--primary);
+}
+
+.styled-list {
+  padding-left: 20px;
+  color: var(--text-main);
+}
+
+.styled-list li {
+  margin-bottom: 8px;
+}
+
+.styled-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Grelhas de Cartões */
+.cards-grid {
+  display: grid;
+  gap: 20px;
+}
+
 .cols-2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cols-4 {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.feature-card {
+  border-top: 3px solid var(--primary-light);
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.card a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Cartões da Equipa */
+.card.person {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  border: 2px solid var(--primary);
+}
+
+.student-id {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--bg-page);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-top: 6px;
+  border: 1px solid var(--border-color);
+}
+
+/* =========================================
+   4. PÁGINA DE PRODUTOS E MAQUETE
+   ========================================= */
 .audience-tags {
   display: flex;
   flex-wrap: wrap;
@@ -119,6 +453,7 @@
   height: 100%;
   background-color: var(--primary-light);
   border-radius: 999px;
+  transition: width 0.3s ease;
 }
 
 .meter.warn i {
@@ -151,6 +486,10 @@
   font-size: 0.85rem;
 }
 
+.mock-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
 .status-badge {
   display: inline-block;
   padding: 4px 10px;
@@ -172,4 +511,28 @@
 .status-badge.reserved {
   background-color: #eff6ff;
   color: #1d4ed8;
+}
+
+/* =========================================
+   5. RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0 48px 0;
+  }
+
+  .hero-section .page-title,
+  .hero-banner .page-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-banner {
+    padding: 40px 0;
+  }
+
+  .prototype-header {
+    align-items: flex-start;
+  }
 }
