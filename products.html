@@ -3,83 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos</title>
+    <title>Nutrimarket - Produtos</title>
+    <!-- Fonte Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="pages.css" />
   </head>
 
   <body>
     <div id="grad1">
-      <header>
-        <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="44" />
-        <h2>Nutrimarket</h2>
+      <!-- Cabeçalho & Navegação -->
+      <header class="site-header">
+        <div class="header-container">
+          <div class="brand">
+            <img
+              class="logo-isep"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP-UTP"
+              height="38"
+            />
+            <span class="brand-name">Nutrimarket</span>
+          </div>
+
+          <nav class="navigation-bar" aria-label="Navegação principal">
+            <a href="index.html" class="nav-link">Página principal</a>
+            <a href="about.html" class="nav-link">Sobre nós</a>
+            <a href="products.html" class="nav-link active">Produto</a>
+            <a href="prototipo.html" class="nav-link btn-highlight">Aplicação</a>
+          </nav>
+        </div>
       </header>
-      <div class="navigation-bar">
-        <a href="index.html"><button type="button">Página principal</button></a>
-        <a href="about.html"><button type="button">Sobre nós</button></a>
-        <a href="products.html"><button type="button">Produto</button></a>
-        <a href="prototipo.html"><button type="button">Aplicação</button></a>
-      </div>
 
-      <main class="page">
-        <section class="block">
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <div class="container">
+          <span class="badge">Solução Integrada · IoT &amp; Logística</span>
           <h1 class="page-title">Produtos</h1>
-          <p>Mais da terra, sem desperdício. Sensores, automação e logística inteligente para cultivar com cuidado e levar os alimentos às prateleiras a tempo.</p>
+          <p class="hero-subtitle">
+            Mais da terra, sem desperdício. Sensores, automação e logística
+            inteligente para cultivar com cuidado e levar os alimentos às
+            prateleiras a tempo.
+          </p>
+        </div>
+      </section>
+
+      <!-- Conteúdo Principal -->
+      <main class="page container main-content">
+        <!-- Lista de Produtos em Cartões -->
+        <section class="block">
+          <h2 class="section-heading">Lista de Produtos</h2>
+          <div class="cards-grid cols-2">
+            <article class="card">
+              <div class="card-icon">🌿</div>
+              <h3>Monitorização das plantas</h3>
+              <p>
+                Sensores de humidade e nutrientes detetam carências e
+                necessidades hídricas a tempo, reduzindo o desperdício de
+                hortícolas.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">📦</div>
+              <h3>Gestão de inventários</h3>
+              <p>
+                Comunicação direta entre agricultores e distribuidores, com
+                envios mais rápidos e alimentos com maior validade.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🐾</div>
+              <h3>Rastreio de animais e proteção de culturas</h3>
+              <p>
+                Evita perdas severas causadas por intrusões de animais e
+                ameaças no perímetro agrícola.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">⛈️</div>
+              <h3>Previsão meteorológica local</h3>
+              <p>
+                Antecipa tempestades e eventos extremos, para ativar a prevenção
+                a tempo.
+              </p>
+            </article>
+          </div>
         </section>
 
-        <section class="block">
-          <h2>Lista de Produtos</h2>
-          <ul class="list">
-            <li><strong>Monitorização das plantas:</strong> sensores de humidade e nutrientes detetam carências e necessidades hídricas a tempo, reduzindo o desperdício de hortícolas.</li>
-            <li><strong>Gestão de inventários:</strong> comunicação direta entre agricultores e distribuidores, com envios mais rápidos e alimentos com maior validade.</li>
-            <li><strong>Rastreio de animais e proteção de culturas:</strong> evita perdas severas causadas por intrusões de animais.</li>
-            <li><strong>Previsão meteorológica local:</strong> antecipa tempestades e eventos extremos, para ativar a prevenção a tempo.</li>
-          </ul>
-        </section>
+        <!-- Objetivos do Produto & Para Quem É -->
+        <div class="grid-2-cols">
+          <section class="card-section highlight-border">
+            <h2>🎯 Objetivos do produto</h2>
+            <ul class="styled-list">
+              <li>
+                Otimizar o uso de água e nutrientes com sensores de campo de
+                baixo custo.
+              </li>
+              <li>
+                Prevenir perdas por meteorologia adversa, pragas e animais.
+              </li>
+              <li>
+                Escoar produtos rapidamente, ligando agricultores a
+                distribuidores antes de os alimentos se estragarem.
+              </li>
+            </ul>
+          </section>
 
-        <section class="block">
-          <h2>Objetivos do produto</h2>
-          <ul class="list">
-            <li>Otimizar o uso de água e nutrientes com sensores de campo de baixo custo.</li>
-            <li>Prevenir perdas por meteorologia adversa, pragas e animais.</li>
-            <li>Escoar produtos rapidamente, ligando agricultores a distribuidores antes de os alimentos se estragarem.</li>
-          </ul>
-        </section>
-
-        <section class="block">
-          <h2>Para quem é</h2>
-          <p>Pequenos agricultores, serviços de distribuição e, indiretamente, populações vulneráveis que beneficiam de alimentos mais acessíveis.</p>
-        </section>
-
-        <section class="block">
-          <h2>Protótipo (primeira versão)</h2>
-          <p>Maquete do painel do agricultor, com dados de exemplo.</p>
-          <a class="btn-app" href="prototipo.html">Abrir a aplicação</a>
-          <div class="mockup" role="img" aria-label="Maquete do painel do Nutrimarket">
-            <div class="mock-bar"><span></span><span></span><span></span> Painel · Horta Norte</div>
-            <div class="mock-grid">
-              <div class="mock-tile"><small>Humidade do solo</small><strong>42%</strong><div class="meter"><i style="width:42%"></i></div></div>
-              <div class="mock-tile"><small>Nutrientes (N-P-K)</small><strong>Baixo N</strong><div class="meter"><i style="width:25%"></i></div></div>
-              <div class="mock-tile"><small>Previsão</small><strong>Tempestade às 18h</strong><div class="meter warn"><i style="width:80%"></i></div></div>
-              <div class="mock-tile"><small>Alerta de intrusão</small><strong>Sem animais</strong><div class="meter"><i style="width:5%"></i></div></div>
+          <section class="card-section">
+            <h2>👥 Para quem é</h2>
+            <p>
+              Pequenos agricultores, serviços de distribuição e, indiretamente,
+              populações vulneráveis que beneficiam de alimentos mais
+              acessíveis.
+            </p>
+            <div class="audience-tags">
+              <span class="mini-tag">Pequenos agricultores</span>
+              <span class="mini-tag">Distribuidores</span>
+              <span class="mini-tag">Comunidades vulneráveis</span>
             </div>
-            <table class="mock-table">
-              <tr><th>Produto</th><th>Quantidade</th><th>Validade</th><th>Estado</th></tr>
-              <tr><td>Tomate</td><td>120 kg</td><td>3 dias</td><td>Disponível</td></tr>
-              <tr><td>Alface</td><td>60 kg</td><td>1 dia</td><td>Escoar já</td></tr>
-              <tr><td>Cenoura</td><td>200 kg</td><td>10 dias</td><td>Reservado</td></tr>
-            </table>
+          </section>
+        </div>
+
+        <!-- Protótipo / Maquete do Painel -->
+        <section class="block">
+          <div class="prototype-header">
+            <div>
+              <h2 class="section-heading">Protótipo (primeira versão)</h2>
+              <p class="section-intro">
+                Maquete do painel do agricultor, com dados de exemplo.
+              </p>
+            </div>
+            <a class="btn-app primary-btn" href="prototipo.html">
+              Abrir a aplicação
+            </a>
+          </div>
+
+          <div
+            class="mockup"
+            role="img"
+            aria-label="Maquete do painel do Nutrimarket"
+          >
+            <div class="mock-bar">
+              <span class="mock-dots"><i></i><i></i><i></i></span>
+              <strong>Painel · Horta Norte</strong>
+            </div>
+
+            <div class="mock-grid">
+              <div class="mock-tile">
+                <small>Humidade do solo</small>
+                <strong>42%</strong>
+                <div class="meter"><i style="width: 42%"></i></div>
+              </div>
+
+              <div class="mock-tile">
+                <small>Nutrientes (N-P-K)</small>
+                <strong>Baixo N</strong>
+                <div class="meter warn"><i style="width: 25%"></i></div>
+              </div>
+
+              <div class="mock-tile">
+                <small>Previsão</small>
+                <strong>Tempestade às 18h</strong>
+                <div class="meter warn"><i style="width: 80%"></i></div>
+              </div>
+
+              <div class="mock-tile">
+                <small>Alerta de intrusão</small>
+                <strong>Sem animais</strong>
+                <div class="meter"><i style="width: 5%"></i></div>
+              </div>
+            </div>
+
+            <div class="mock-table-wrap">
+              <table class="mock-table">
+                <thead>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Validade</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Tomate</strong></td>
+                    <td>120 kg</td>
+                    <td>3 dias</td>
+                    <td><span class="status-badge ok">Disponível</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Alface</strong></td>
+                    <td>60 kg</td>
+                    <td>1 dia</td>
+                    <td><span class="status-badge urgent">Escoar já</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cenoura</strong></td>
+                    <td>200 kg</td>
+                    <td>10 dias</td>
+                    <td><span class="status-badge reserved">Reservado</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
       </main>
 
+      <!-- Rodapé -->
       <footer class="site-footer">
-        <div class="footer-cols">
-          <div>
-            <img class="logo-isep" src="img/logo-isep-utp.svg" alt="Logótipo do ISEP-UTP" height="36" />
-            <p>Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web do Projeto &amp; Protótipo da Solução</p>
+        <div class="container footer-cols">
+          <div class="footer-info">
+            <img
+              class="logo-isep"
+              src="i3_logo_isep_2023.png"
+              alt="Logótipo do ISEP-UTP"
+              height="36"
+            />
+            <p>
+              Licenciatura em Engenharia Informática<br />Sprint 2 · Página Web
+              do Projeto &amp; Protótipo da Solução
+            </p>
           </div>
-          <div>
+          <div class="footer-links">
             <h3>Fontes e referências</h3>
             <ul class="links">
               <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">ODS 2 – Erradicar a Fome (ONU)</a></li>
@@ -91,7 +244,12 @@
             </ul>
           </div>
         </div>
-        <p class="copy">&copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno Mesquita e Daniel Borges. Todos os direitos reservados.</p>
+        <div class="footer-bottom">
+          <p class="copy">
+            &copy; 2026 BEST4TEAMUP · Rodrigo Terra, Salvador Mendonça, Nuno
+            Mesquita e Daniel Borges. Todos os direitos reservados.
+          </p>
+        </div>
       </footer>
     </div>
   </body>
